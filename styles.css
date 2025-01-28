@@ -2,43 +2,42 @@ body{
     background-color: #000;
 }
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 12px;
-    width: 300px;
-    margin-bottom: 20px;
-
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    padding:12px;
+    width:300px;
 }
 
-.sidebar__navigation {
+.sidebar__navigation{
     background-color: #121212;
-    border-radius: 8px;
-    padding: 16px 0 15px 16px;
+    border-radius:8px;
+    padding:16px 0 0 16px;
 }
 
-.sidebar__navigation .logo {
-    background-color: #121212;
-    display: flex;
-    border-radius: 8px;
-    padding: 16px 0 0 16px;
-
+.logo{
+    background: #121212;
+    display:flex;
+    border-radius:8px ;
+    padding:16px 0 0 16px;
 }
 
-.sidebar nav {
-    margin-bottom: 10px;
+.sidebar__navigation .logo img{
+    width:80px;
 }
-.sidebar nav ul {
+
+.sidebar nav ul{
     margin-top: 20px;
-    padding: 0 20px 10px 20px;
+    padding:0 20px 10px 20px;
 }
 
-.sidebar ul li {
+.sidebar ul li{
     padding: 10px 0;
 }
 
-.sidebar__topic{
+.sidebar nav ul li a{
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
@@ -46,13 +45,46 @@ body{
     font-family: "DM Sans", sans-serif;
 }
 
-.sidebar__topic__text{
-    font-weight: 700;
-    font-size: 16px;
-    margin-left: 34px;
-    padding: 0 110px 0 0;
+.library {
+    background-color: #121212;
+    border-radius:8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 4px 8px;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
-.logo img{
-    width: 80px;
+.library .library__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library__button {
+    display: flex;
+    margin-right: 10px;
+    color: #b3b3b3;
+    background-color: transparent;
+    border: 0px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+}
+
+.library .library__button .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
+    padding-right: 8px;
+}
+
+.library .library__content .fa-plus{
+    margin: 24px 10px;
 }
